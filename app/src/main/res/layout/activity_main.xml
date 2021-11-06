@@ -4,18 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="8dp"
-        android:autoText="true"
+        android:layout_marginLeft="@dimen/margem_actividades"
+        android:layout_marginTop="@dimen/margem_actividades"
+        android:layout_marginRight="@dimen/margem_actividades"
         android:background="@color/cor_info"
         android:padding="@dimen/padding_textviews"
         android:text="Temperatura"
         android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/editTemperatura"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginLeft="@dimen/margem_actividades"
+        android:layout_marginRight="@dimen/margem_actividades"
+        android:background="@color/cor_input"
+        android:ems="10"
+        android:hint="Temperature"
+        android:inputType="numberSigned|numberDecimal" />
 
 </LinearLayout>
