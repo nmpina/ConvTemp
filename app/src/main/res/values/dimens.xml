@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margem_actividades">16dp</dimen>
+    <dimen name="padding_textviews">8dp</dimen>
+    <dimen name="margem_campos">16dp</dimen>
+</resources>
