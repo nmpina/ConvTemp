@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/margem_actividades"
@@ -28,5 +29,47 @@
         android:ems="10"
         android:hint="Temperature"
         android:inputType="numberSigned|numberDecimal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margem_actividades"
+        android:layout_marginTop="@dimen/margem_campos"
+        android:layout_marginRight="@dimen/margem_actividades"
+        android:background="@color/cor_info"
+        android:padding="@dimen/padding_textviews"
+        android:text="@string/unidades"
+        android:textColor="@color/white" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margem_actividades"
+        android:layout_marginRight="@dimen/margem_actividades"
+        android:background="@color/cor_input">
+
+        <RadioButton
+            android:id="@+id/radioButtonFahrenheit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fahrenheit" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCelsius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/celsius"
+            android:textColor="@color/black" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonConvTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margem_actividades"
+        android:layout_marginTop="@dimen/margem_campos"
+        android:layout_marginRight="@dimen/margem_actividades"
+        android:backgroundTint="@color/cor_botoes"
+        android:text="@string/converter" />
 
 </LinearLayout>
