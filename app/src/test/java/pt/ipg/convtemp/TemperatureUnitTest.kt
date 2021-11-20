@@ -21,4 +21,15 @@ class TemperatureUnitTest {
         assertEquals(25.0, calor.GetCelsius(), 0.001)
         assertEquals(77.0, calor.GetFahrenheit(), 0.001)
     }
+
+    @Test
+    fun conversaoCelsius_isCorrect() {
+        val frio = TemperaturaCelsius (0.0)
+        assertEquals(0.0, frio.GetCelsius(), 0.001)
+        assertEquals(32.0, frio.GetFahrenheit(), 0.001)
+
+        val calor = TemperaturaCelsius(25.0)
+        assertEquals(25.0, calor.GetCelsius(), 0.001)
+        assertEquals(77.0, calor.GetFahrenheit(), 0.001)
+    }
 }
