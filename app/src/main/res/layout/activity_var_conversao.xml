@@ -17,6 +17,7 @@
         android:textAlignment="center"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="18dp" />
 
@@ -31,13 +32,16 @@
         android:id="@+id/space"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="193dp"
-        tools:layout_editor_absoluteY="340dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textViewFahrenheit"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
         android:background="@color/cor_input"
         android:text="25,00"
         android:textAlignment="center"
@@ -47,4 +51,32 @@
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/cor_info"
+        android:text="Celsius"
+        android:textAlignment="center"
+        android:textColor="@color/cor_texto_info"
+        app:layout_constraintEnd_toEndOf="@+id/textViewFahrenheit"
+        app:layout_constraintStart_toStartOf="@+id/textViewFahrenheit"
+        app:layout_constraintTop_toBottomOf="@+id/space" />
+
+    <TextView
+        android:id="@+id/textViewCelsius"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/cor_input"
+        android:text="77,00"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
