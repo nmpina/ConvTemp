@@ -24,7 +24,7 @@
 
     <EditText
         android:id="@+id/editTemperatura"
-        android:layout_width="379dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/cor_input"
         android:ems="10"
@@ -36,21 +36,23 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="379dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margem_actividades"
         android:background="@color/cor_info"
         android:padding="@dimen/padding_textviews"
         android:text="@string/unidades"
         android:textColor="@color/white"
-        app:layout_constraintTop_toBottomOf="@+id/editTemperatura"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintEnd_toEndOf="@+id/editTemperatura"
+        app:layout_constraintStart_toStartOf="@+id/editTemperatura"
+        app:layout_constraintTop_toBottomOf="@+id/editTemperatura" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="379dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/cor_input"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
         app:layout_constraintStart_toStartOf="@+id/textView3"
         tools:layout_editor_absoluteY="127dp">
 
