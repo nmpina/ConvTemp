@@ -9,7 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="cor_info">#033C06</color>
     <color name="cor_input">#FFEB3B</color>
-    <color name="cor_botoes">#E91E63</color>
+    <color name="cor_botoes">#3F51B5</color>
     <color name="cor_texto_info">#FFFFFFFF</color>
     <color name="cor_info_destaque">#FFFFFFFF</color>
 </resources>
